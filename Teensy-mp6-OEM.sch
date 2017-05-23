@@ -1,0 +1,316 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wheelerlab
+LIBS:mp6-oem
+LIBS:teensy
+LIBS:Teensy-mp6-OEM-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Teensy-mp6-OEM"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Teensy_3.2 U1
+U 1 1 591DB370
+P 3600 2150
+F 0 "U1" H 3600 2150 60  0000 C CNN
+F 1 "Teensy_3.2" H 3600 3600 60  0000 C CNN
+F 2 "WheelerLab:Teensy-3.2" H 3700 1600 60  0001 C CNN
+F 3 "" H 3700 1600 60  0000 C CNN
+	1    3600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 591DC08E
+P 2450 1300
+F 0 "#PWR01" H 2450 1050 50  0001 C CNN
+F 1 "GND" H 2450 1150 50  0000 C CNN
+F 2 "" H 2450 1300 50  0001 C CNN
+F 3 "" H 2450 1300 50  0001 C CNN
+	1    2450 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 591DC0A8
+P 5200 2400
+F 0 "#PWR02" H 5200 2150 50  0001 C CNN
+F 1 "GND" H 5200 2250 50  0000 C CNN
+F 2 "" H 5200 2400 50  0001 C CNN
+F 3 "" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 591DC0FF
+P 4850 1600
+F 0 "#PWR03" H 4850 1450 50  0001 C CNN
+F 1 "+3.3V" H 4850 1740 50  0000 C CNN
+F 2 "" H 4850 1600 50  0001 C CNN
+F 3 "" H 4850 1600 50  0001 C CNN
+	1    4850 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 591DC139
+P 6900 2450
+F 0 "#PWR04" H 6900 2300 50  0001 C CNN
+F 1 "+3.3V" H 6900 2590 50  0000 C CNN
+F 2 "" H 6900 2450 50  0001 C CNN
+F 3 "" H 6900 2450 50  0001 C CNN
+	1    6900 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2550 5200 2550
+Wire Wire Line
+	5200 2550 5200 2400
+Wire Wire Line
+	2600 1400 2450 1400
+Wire Wire Line
+	2450 1400 2450 1300
+Wire Wire Line
+	6900 2550 6900 2450
+Wire Wire Line
+	4600 1700 4850 1700
+Wire Wire Line
+	4850 1700 4850 1600
+Wire Wire Line
+	3950 3900 5150 3900
+Wire Wire Line
+	5150 3900 5150 3000
+Wire Wire Line
+	5150 3000 5250 3000
+NoConn ~ 4600 800 
+NoConn ~ 4600 950 
+NoConn ~ 4600 1100
+NoConn ~ 4600 1400
+NoConn ~ 4600 1550
+NoConn ~ 4600 1850
+NoConn ~ 4600 2000
+NoConn ~ 4600 2150
+NoConn ~ 4600 2300
+NoConn ~ 4600 2450
+NoConn ~ 4600 2600
+NoConn ~ 4600 2750
+NoConn ~ 4600 2900
+NoConn ~ 4600 3050
+NoConn ~ 4600 3200
+NoConn ~ 4600 3350
+NoConn ~ 2600 3350
+NoConn ~ 2600 3050
+NoConn ~ 2600 2900
+NoConn ~ 2600 2750
+NoConn ~ 2600 2600
+NoConn ~ 2600 2450
+NoConn ~ 2600 2300
+NoConn ~ 2600 2150
+NoConn ~ 2600 2000
+NoConn ~ 2600 1850
+NoConn ~ 2600 1700
+NoConn ~ 2600 1550
+NoConn ~ 5250 3150
+NoConn ~ 6800 3000
+NoConn ~ 6800 2850
+NoConn ~ 3350 3900
+NoConn ~ 3500 3900
+NoConn ~ 3650 3900
+NoConn ~ 3800 3900
+$Comp
+L mp6-OEM U2
+U 1 1 591DD80A
+P 5700 3000
+F 0 "U2" H 6050 2950 60  0000 C CNN
+F 1 "mp6-OEM" H 6000 2500 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 5700 3450 60  0001 C CNN
+F 3 "" H 5700 3450 60  0001 C CNN
+	1    5700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2550 6800 2700
+Connection ~ 6800 2550
+NoConn ~ 6800 3150
+Wire Wire Line
+	6750 2550 6900 2550
+$Comp
+L CONN_01X03 J1
+U 1 1 591DFC7B
+P 5750 1650
+F 0 "J1" H 5750 1850 50  0000 C CNN
+F 1 "CONN_01X03" V 5850 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5750 1650 50  0001 C CNN
+F 3 "" H 5750 1650 50  0001 C CNN
+	1    5750 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1750 4950 1750
+Wire Wire Line
+	4950 1750 4950 2850
+Wire Wire Line
+	4950 2850 5250 2850
+Wire Wire Line
+	5550 1650 5050 1650
+Wire Wire Line
+	5050 1650 5050 2700
+Wire Wire Line
+	5050 2700 5250 2700
+Wire Wire Line
+	5550 1550 5150 1550
+Wire Wire Line
+	5150 1550 5150 550 
+Wire Wire Line
+	5150 550  2250 550 
+Wire Wire Line
+	2250 550  2250 3200
+Wire Wire Line
+	2250 3200 2600 3200
+Wire Wire Line
+	5250 3450 5250 4150
+Wire Wire Line
+	5250 4150 5900 4150
+Wire Wire Line
+	5250 3300 5250 4000
+Wire Wire Line
+	5250 4000 5800 4000
+Wire Wire Line
+	6800 3450 6800 4150
+Wire Wire Line
+	6800 4150 6350 4150
+Wire Wire Line
+	6800 3300 6800 4000
+Wire Wire Line
+	6800 4000 6250 4000
+$Comp
+L mp6-pump-conector U3
+U 1 1 591F21B7
+P 6100 3850
+F 0 "U3" H 6050 3400 60  0000 C CNN
+F 1 "mp6-pump-conector" H 6100 3850 60  0000 C CNN
+F 2 "WheelerLab:mp6-pump-footprint" H 6100 3850 60  0001 C CNN
+F 3 "" H 6100 3850 60  0001 C CNN
+	1    6100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 591F3D70
+P 2450 1300
+F 0 "#PWR05" H 2450 1050 50  0001 C CNN
+F 1 "GND" H 2450 1150 50  0000 C CNN
+F 2 "" H 2450 1300 50  0001 C CNN
+F 3 "" H 2450 1300 50  0001 C CNN
+	1    2450 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 591F3D71
+P 5200 2400
+F 0 "#PWR06" H 5200 2150 50  0001 C CNN
+F 1 "GND" H 5200 2250 50  0000 C CNN
+F 2 "" H 5200 2400 50  0001 C CNN
+F 3 "" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR07
+U 1 1 591F3D72
+P 4850 1600
+F 0 "#PWR07" H 4850 1450 50  0001 C CNN
+F 1 "+3.3V" H 4850 1740 50  0000 C CNN
+F 2 "" H 4850 1600 50  0001 C CNN
+F 3 "" H 4850 1600 50  0001 C CNN
+	1    4850 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR08
+U 1 1 591F3D73
+P 6900 2450
+F 0 "#PWR08" H 6900 2300 50  0001 C CNN
+F 1 "+3.3V" H 6900 2590 50  0000 C CNN
+F 2 "" H 6900 2450 50  0001 C CNN
+F 3 "" H 6900 2450 50  0001 C CNN
+	1    6900 2450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4600 800 
+NoConn ~ 4600 950 
+NoConn ~ 4600 1100
+NoConn ~ 4600 1400
+NoConn ~ 4600 1550
+NoConn ~ 4600 1850
+NoConn ~ 4600 2000
+NoConn ~ 4600 2150
+NoConn ~ 4600 2300
+NoConn ~ 4600 2450
+NoConn ~ 4600 2600
+NoConn ~ 4600 2750
+NoConn ~ 4600 2900
+NoConn ~ 4600 3050
+NoConn ~ 4600 3200
+NoConn ~ 4600 3350
+NoConn ~ 2600 3350
+NoConn ~ 2600 3050
+NoConn ~ 2600 2900
+NoConn ~ 2600 2750
+NoConn ~ 2600 2600
+NoConn ~ 2600 2450
+NoConn ~ 2600 2300
+NoConn ~ 2600 2150
+NoConn ~ 2600 2000
+NoConn ~ 2600 1850
+NoConn ~ 2600 1700
+NoConn ~ 2600 1550
+NoConn ~ 5250 3150
+NoConn ~ 6800 3000
+NoConn ~ 6800 2850
+NoConn ~ 3350 3900
+NoConn ~ 3500 3900
+NoConn ~ 3650 3900
+NoConn ~ 3800 3900
+NoConn ~ 6800 3150
+$EndSCHEMATC
